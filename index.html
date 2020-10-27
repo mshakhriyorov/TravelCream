@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/style.css">
+    <title>TravelCream</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#">TravelCream</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPartsOfFlight"
+                aria-controls="navbarPartsOfFlight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPartsOfFlight">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#flight">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hotel">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trip">Trips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#allabout">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#allabout">Deals</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success my-2 my-sm-0"><a href="#">Login</a></button>
+            </div>
+        </nav>
+        <h1>Do you want to visit Paris ?</h1>
+        <p>Why not</p>
+    </header>
+
+
+    <main>
+        <div class="main-top">
+            <div class="container">
+                <div class="row">
+                    <input class="col-md-3 col-sm-6" type="text" placeholder="Where are you leaving from?">
+                    <input class="col-md-3 col-sm-6" type="text" placeholder="Where do you want to go?">
+                    <input class="col-md-3 col-sm-6" type="text" placeholder="Date">
+                    <button class="col-md-3 col-sm-6">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flights" id="flight">
+            <!-- <div class="container">
+                <div class="row d-flex justify-content-between m-0">
+                    <h2>Flights</h2>
+                    <ul class="d-flex flex-wrap">
+                        <li><a href="#">Non stop</a></li>
+                        <li><a href="#">Best Price</a></li>
+                        <li><a href="#">Airline</a></li>
+                        <li><a href="#">Schedule</a></li>
+                    </ul>
+                </div>
+
+                
+              <div class="table-box">
+                    
+                  <div class="table-row">
+                      <div class="table-cell">
+                          <p>Airlines</p>
+                      </div>
+                      <div class="table-cell">
+                          <p class="text-right">Date</p>
+                      </div>
+                      <div class="table-cell">
+                          <p class="text-center">Departures</p>
+                      </div>
+                      <div class="table-cell">
+                          <p>Arrival</p>
+                      </div>
+                      <div class="table-cell">
+                          <p>Time</p>
+                      </div>
+                      <div class="table-cell">
+                          <p>Price</p>
+                      </div>
+                  </div>
+
+                  <div class="table-row">
+                    <div class="table-cell d-flex flex-wrap">
+                        <img src="./images/flights_03.jpg" alt="" width="30px" height="30px">
+                        <p>Vueling <br><span>VO1367</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">03/11/2017</p>
+                    </div>
+                    <div class="table-cell">
+                        <p >Paris (CDG) <br><span>07:15</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">Miami <br><span>5:00</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">08:45</p>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn">870$</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell d-flex flex-wrap">
+                        <img src="./images/flights_06.jpg" alt="" width="30px" height="30px">
+                        <p>Air France <br><span>AF90</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">03/11/2017 <br><span>In 3 days</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">Paris (CDG) <br><span>03:00</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">Miami <br><span>11;45</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">08:45 <br><span>CDG – MIA</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn">870$</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell d-flex flex-wrap">
+                        <img src="./images/flights_09.jpg" alt="" width="30px" height="30px">
+                        <p>American <br><span>VO1367</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">03/11/2017 <br><span>In 3 days</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">Paris (CDG) <br><span>07:15</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">Miami <br><span>5:00</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">08:45 <br><span>CDG – MIA</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn">870$</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell d-flex flex-wrap">
+                        <img src="./images/flights_11.jpg" alt="" width="30px" height="30px">
+                        <p>Delta <br><span>VO1367</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">03/11/2017 <br><span>In 3 days</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">Paris (CDG) <br><span>07:15</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">Miami <br><span>5:00</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">08:45 <br><span>CDG – MIA</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn">870$</button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell d-flex flex-wrap">
+                        <img src="./images/flights_13.png" alt="" width="30px" height="30px">
+                        <p>Transavia <br><span>VO1367</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">03/11/2017 <br><span>In 3 days</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-center">Paris (CDG) <br><span>07:15</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">Miami <br><span>5:00</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <p class="text-right">08:45 <br><span>CDG – MIA</span></p>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn">870$</button>
+                    </div>
+                </div>
+                
+              </div>
+
+            
+
+              <div class="item">
+                  <div class="container">
+                      <div class="row d-flex justify-content-end mt-4 mb-5"><p><a  class="text-decoration-none font-weight-normal text-body text-secondary"  href="#">See all flights</a></p></div>
+                  </div>
+              </div>
+            </div> -->
+
+            <div class="container mob">
+                <div class="row justify-content-lg-between align-items-center justify-content-md-center">
+                    <h2 class="text">Flights</h2>
+                    <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home1" role="tab" aria-controls="home">Non stop</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                            href="#list-profile1" role="tab" aria-controls="profile">Best Price</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages1" role="tab" aria-controls="messages">Airline</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings1" role="tab" aria-controls="settings">Schedule</a>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home1" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <div class="section__flights">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table__header">
+                                                <td><span>Airline</span></td>
+                                                <td><span>Date</span></td>
+                                                <td><span>Departure</span></td>
+                                                <td><span>Arrival</span></td>
+                                                <td><span>Time</span></td>
+                                                <td><span>Price</span></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_03.jpg" alt="vueling">
+                                                    <h3>Vueling</h3>
+                                                    <p>VO1367</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>07:15</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>5:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">870 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_06.jpg" alt="air_france">
+                                                    <h3>Air France</h3>
+                                                    <p>AF90</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>03:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:45</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1023 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_09.jpg" alt="american">
+                                                    <h3>American</h3>
+                                                    <p>AA63</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>01:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>09:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">980 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_11.jpg" alt="delta">
+                                                    <h3>Delta</h3>
+                                                    <p>DL405</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:30</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:30</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1340 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__transavla">
+                                                <td>
+                                                    <img src="images/flights_13.png" alt="transavla">
+                                                    <h3>Transavla</h3>
+                                                    <p>T04330</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">930 $</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="list-profile1" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="section__flights">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table__header">
+                                                <td><span>Airline</span></td>
+                                                <td><span>Date</span></td>
+                                                <td><span>Departure</span></td>
+                                                <td><span>Arrival</span></td>
+                                                <td><span>Time</span></td>
+                                                <td><span>Price</span></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_03.jpg" alt="vueling">
+                                                    <h3>Vueling</h3>
+                                                    <p>VO1367</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>07:15</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>5:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">870 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_06.jpg" alt="air_france">
+                                                    <h3>Air France</h3>
+                                                    <p>AF90</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>03:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:45</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1023 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_09.jpg" alt="american">
+                                                    <h3>American</h3>
+                                                    <p>AA63</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>01:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>09:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">980 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_11.jpg" alt="delta">
+                                                    <h3>Delta</h3>
+                                                    <p>DL405</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:30</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:30</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1340 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__transavla">
+                                                <td>
+                                                    <img src="images/flights_13.png" alt="transavla">
+                                                    <h3>Transavla</h3>
+                                                    <p>T04330</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">930 $</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="list-messages1" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="section__flights">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table__header">
+                                                <td><span>Airline</span></td>
+                                                <td><span>Date</span></td>
+                                                <td><span>Departure</span></td>
+                                                <td><span>Arrival</span></td>
+                                                <td><span>Time</span></td>
+                                                <td><span>Price</span></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_03.jpg" alt="vueling">
+                                                    <h3>Vueling</h3>
+                                                    <p>VO1367</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>07:15</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>5:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">870 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_06.jpg" alt="air_france">
+                                                    <h3>Air France</h3>
+                                                    <p>AF90</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>03:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:45</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1023 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_09.jpg" alt="american">
+                                                    <h3>American</h3>
+                                                    <p>AA63</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>01:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>09:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">980 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_11.jpg" alt="delta">
+                                                    <h3>Delta</h3>
+                                                    <p>DL405</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:30</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:30</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1340 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__transavla">
+                                                <td>
+                                                    <img src="images/flights_13.png" alt="transavla">
+                                                    <h3>Transavla</h3>
+                                                    <p>T04330</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">930 $</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="list-settings1" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="section__flights">
+                            <div class="container">
+                                <div class="row justify-content-md-center">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="table__header">
+                                                <td><span>Airline</span></td>
+                                                <td><span>Date</span></td>
+                                                <td><span>Departure</span></td>
+                                                <td><span>Arrival</span></td>
+                                                <td><span>Time</span></td>
+                                                <td><span>Price</span></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_03.jpg" alt="vueling">
+                                                    <h3>Vueling</h3>
+                                                    <p>VO1367</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>07:15</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>5:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">870 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_06.jpg" alt="air_france">
+                                                    <h3>Air France</h3>
+                                                    <p>AF90</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>03:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:45</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:45</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1023 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_09.jpg" alt="american">
+                                                    <h3>American</h3>
+                                                    <p>AA63</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>01:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>09:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">980 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/flights_11.jpg" alt="delta">
+                                                    <h3>Delta</h3>
+                                                    <p>DL405</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:30</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>11:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:30</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">1340 $</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="table__transavla">
+                                                <td>
+                                                    <img src="images/flights_13.png" alt="transavla">
+                                                    <h3>Transavla</h3>
+                                                    <p>T04330</p>
+                                                </td>
+                                                <td>
+                                                    <h3>03/11/2017</h3>
+                                                    <p>In 3 days</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Paris (CDG)</h3>
+                                                    <p>02:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>Miami</h3>
+                                                    <p>10:00</p>
+                                                </td>
+                                                <td>
+                                                    <h3>08:00</h3>
+                                                    <p>CDG – MIA</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-danger">930 $</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <p><a class="text-decoration-none font-weight-normal text-body text-secondary" href="#">See
+                                    all flights</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="hotels" id="hotel">
+
+            <div class="container mob">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <h2 class="d-flex justify-content-start">Hotels</h2>
+                    <!-- List group -->
+                    <div class="list-group  flex-row" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#price"
+                            role="tab">Best price</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#distance"
+                            role="tab">Distance</a>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="price" role="tabpanel">
+                            <div class="hot">
+                                <div class="container">
+                                    <div class="row row-cols-1 row-cols-md-3">
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_03.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Paris Ouest Achères</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>12,3 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>30$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_05.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">L'Hôtel du Collectionneur</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>9.8 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>38$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_07.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Eiffel Seine</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>17.6 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>42$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_13.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Mademoiselle</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>23.2 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>42$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_15.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Novotel Paris-Les-Halles</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>10.7 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>52$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_16.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Villa Royale Montsouris </h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>14,8 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>56$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane active" id="distance" role="tabpanel">
+                            <div class="hot">
+                                <div class="container">
+                                    <div class="row row-cols-1 row-cols-md-3">
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_05.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Paris Ouest Achères</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>12,3 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>30$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_15.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">L'Hôtel du Collectionneur</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>9.8 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>38$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_16.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Eiffel Seine</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>17.6 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>42$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_03.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Mademoiselle</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>23.2 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>42$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_07.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hôtel Novotel Paris-Les-Halles</h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>10.7 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>52$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col mb-4">
+                                            <div class="card h-100">
+                                                <img src="./images/hotel_16.jpg" class="card-img-top" alt="hotel">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Villa Royale Montsouris </h5>
+                                                    <div class="text d-flex flex-wrap justify-content-between">
+                                                        <p>14,8 km</p>
+                                                        <p>Free Wi-Fi</p>
+                                                    </div>
+                                                    <button>56$</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <p><a class="text-decoration-none font-weight-normal text-body text-secondary" href="#">See
+                                    all hotels</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="attractions" id="attraction">
+            <div class="container mob">
+                <div class="row  justify-content-between align-items-center">
+                    <h2 class="d-flex justify-content-xs-center">Attractions</h2>
+
+                    <!-- List group -->
+
+                    <div class="list-group  flex-row" id="myList2" role="tablist">
+
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#All"
+                            role="tab">All</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Shoppings"
+                            role="tab">Shoppings</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Shows"
+                            role="tab">Shows</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Parks"
+                            role="tab">Parks</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Circuits"
+                            role="tab">Circuits</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Museums"
+                            role="tab">Museums</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#Monuments"
+                            role="tab">Monuments</a>
+                    </div>
+
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="All" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Shoppings" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Shows" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Parks" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Circuits" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Museums" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Monuments" role="tabpanel">
+                            <div class="attrack">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="./images/attractioons/attractions_03.jpg" width="100%" alt="">
+                                            <div class="item">
+                                                <p>Eiffel Tower</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div>
+                                                <img src="./images/attractioons/attractions_05.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Louvres</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="./images/attractioons/attractions_08.jpg" alt="">
+                                                <div class="item">
+                                                    <p>Notre Dame de Paris</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_11.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Foruma des Halles</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_13.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Arc de Triomphe</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img class="mb-4" src="./images/attractioons/attractions_15.jpg"
+                                                width="100%" alt="">
+                                            <div class="item">
+                                                <p>Sacré Coeur</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-end">
+                            <p><a class="text-decoration-none font-weight-normal text-body text-secondary" href="#">See
+                                    all attractions</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="main-trips__part" id="trip">
+            <!-- List group -->
+            <div class="container">
+                <div class="row justify-content-lg-between align-items-lg-center flex-row">
+                    <h2 class="text__trips">Trips</h2>
+                    <div class="list-group list-group-horizontal" id="myList3" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#trip1"
+                            role="tab">Best Trips</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#trip2"
+                            role="tab">Popularity</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="trip1" role="tabpanel">
+                    <div class="container panel__content">
+                        <div class="row">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_03.jpg" class="card-img" alt="eifel">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cards__content">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_06.jpg" class="card-img" alt="trip_bord">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cards__content">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_08.jpg" class="card-img" alt="louvres">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="trip2" role="tabpanel">
+                    <div class="container panel__content">
+                        <div class="row">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_06.jpg" class="card-img" alt="eifel">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cards__content">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_08.jpg" class="card-img" alt="trip_bord">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card cards__content">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/trips/trips_03.jpg" class="card-img" alt="louvres">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4>Accès prioritaire au sommet de la tour Eiffel et hôte</h4>
+                                            <p class="card-title">Avec ce billet coupe-file pour la tour Eiffel,
+                                                profitez de la seule entrée prioritaire à la tour
+                                                qui comprend un guide et des commentaires, vous offrant une visite sans
+                                                encombre de
+                                                l'un des monuments les plus visités au monde. Accompagné de votre guide
+                                                depuis
+                                                l'extérieur de l'entrée principale jusqu'au deuxième étage, vous
+                                                profiterez d'une entrée
+                                                détendue à la tour Eiffel avec suffisamment de temps libre pour flâner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="alltrips">
+                    <a href="#!" class="alltrips__main">See all Trips</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container" id="allabout">
+            <div class="row justify-content-between align-items-center justify-content-md-center align-items-md-center">
+                <div class="col-lg-3">
+                    <div class="first__part-footer">
+                        <h2 class="first-partfooter__text">Cities</h2>
+                        <p><a href="#">Paris</a></p>
+                        <p><a href="#">Miami</a></p>
+                        <p><a href="#">London</a></p>
+                        <p><a href="#">Madrid</a></p>
+                        <p><a href="#">Tokyo</a></p>
+                        <p><a href="#">Pekin</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="second-footer">
+                        <h2>Explore</h2>
+                        <p><a href="#">Register</a></p>
+                        <p><a href="#">Login</a></p>
+                        <p><a href="#">Assistance</a></p>
+                        <p><a href="#">Eco</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="third__part-footer">
+                        <h2>About us</h2>
+                        <p><a href="#">About TravelCream</a></p>
+                        <p><a href="#">Careers</a></p>
+                        <p><a href="#">Blog</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Terms of Usage</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="fourth__part-footer">
+                        <h2>Contact</h2>
+                        <p><a href="#">Feel free to get in touch via email:</a></p>
+                        <p><a href="#" class="hyperLink">support@travelcream.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./bootstrap-4.5.2-dist/js/jQuery.min.js"></script>
+    <script src="./bootstrap-4.5.2-dist/js/popper.min.js"></script>
+    <script src="./bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

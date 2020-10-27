@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+::-webkit-scrollbar{
+    background-color: #fff;
+    width: 8px ;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50%;
+    background-color: #1f2336;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ==== HEADER STARTS ==== */
+
+header{
+    background: url('../../images/background_01.jpg') center center no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+header .navbar{
+    padding-bottom: 0;
+}
+
+header .navbar .navbar-brand{
+    padding: 10px 30px 0 130px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .navbar .navbar-brand:hover{
+    color: #fff;
+}
+
+header .navbar .navbar-nav li a{
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff !important;
+}
+
+header .navbar .collapse .btn{
+    margin-top: 30px !important ;
+    margin-right: 130px;
+    width: 120px;
+    height: 40px;
+    padding: 10px 35px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    
+}
+
+header .navbar .collapse .btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .navbar .navbar-toggler {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+header  h1{
+    padding: 200px 0 60px;
+    width: 100%;
+    height: auto;
+    font-size: 72px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+header p{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* ====  HEADER ENDS ====  */
+
+
+/* ===    MAIN STARTS ====  */
+
+main{
+    background-color: #ffffff;
+}
+
+main .main-top{
+    width: 70%;
+    margin-top: 20px;
+    position: relative;
+    left: 12%;
+    top: -40px;
+    display: flex;
+
+}
+
+main .main-top input{
+ width: 335px ;
+ height: auto;
+ padding: 13px 10px; 
+ font-size: 16px;
+ font-weight: 400;
+ border: 1px solid #e6e6e6;
+}
+
+main .main-top input:nth-child(3){
+    width: 185px;
+    height: auto;
+}
+
+main .main-top button{
+    width: 100px;
+    height: auto;
+    background-color: #ff4b64;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: none;
+}
+
+
+main .flights .mob .list-group a {
+    color: #000;
+    background: none;
+    width: auto;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    
+    transition: 0.3s ease ;
+}  
+
+
+main .flights .mob .list-group a:hover{
+    color: #ff4b64;
+}
+
+main .flights .mob .list-group a.active {
+    color: #ff4b64
+}  
+
+main .flights h2.text {
+    padding-left: 14px;
+    margin: 0;
+    
+    font-size: 30px;
+    font-weight: 400;
+}
+
+ 
+ main .flights table thead tr {
+    border-top: 2px solid #ffffff;
+} 
+
+ main .flights table.table tr {
+    height: 140px;
+}
+
+ main .flights .table__header td span {
+    font-size: 16px;
+    color: #484848;
+    font-weight: 500;
+    display: block;
+    margin-top: 50px;
+    margin-left: -100px;
+    margin-right: -30px;
+    text-align: center;
+}
+
+main .flights table.table tr td {
+    position: relative;
+}
+
+main .flights table.table tr td img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+
+
+main .flights table.table tr td h3 {
+    font-size: 16px;
+    color: #484848;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+main .flights table.table tr td p {
+    font-size: 16px;
+    color: #9a9a9a;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 30px;
+}
+
+
+main .flights table.table tr td .btn {
+    padding: 10px 36px;
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+}
+
+main .flights .table__transavla {
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
+
+/* ===== flights end ==== */
+
+
+
+
+
+/* ==== hotels start ===== */
+
+main .hotels > .container > .row  .list-group-item{
+    color: #000;
+    background: none;
+    width: auto;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 67px;
+    transition: 0.3s ease ;
+}
+
+main .hotels > .container > .row  .list-group-item.active {
+    color: #ff4b64;
+} 
+
+
+main .hotels > .container > .row  .list-group-item:hover{
+    color: #ff4b64;
+}
+
+
+main .hotels > .container > .row > h2{
+    padding-left: 14px;
+    margin: 0;
+    padding-bottom: 67px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+main .hotels .container  .col .card{
+    border: 1px solid #e6e6e6 ;
+}
+
+
+main .hotels .container  .col .card h5{
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main .hotels .container  .col .card .text p{
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+main .hotels .container  .col .card .text p:nth-child(1){
+    padding-left: 15px;
+}
+
+main .hotels .container  .col .card .text p:nth-child(2){
+    padding-right: 15px;
+}
+
+
+main .hotels .container  .col .card button{
+    padding: 12px 40px;
+    border: 2px solid #ff4b64;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ff4b64;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 14px;
+}
+
+
+main .hotels .container  .col .card .card-body{
+    padding: 0;
+}
+
+
+main .hotels .item > .row{
+    margin-top: 43px;
+    margin-bottom: 95px;
+}
+/* ==== hotels end ===== */
+
+
+/* ==== attractions starts ==== */
+
+
+
+
+
+main .attractions > .container > .row > .tab-content > .tab-pane > .attrack .col-md-8 img{
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+main .attractions > .container > .row > .tab-content > .tab-pane > .attrack .col-md-4 img{
+    margin-bottom: 10px;
+}
+
+main .attractions > .container > .row  .list-group-item.active {
+    color: #ff4b64;
+} 
+
+main .attractions > .container > .row  .list-group-item{
+    color: #000;
+    background: none;
+    width: auto;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 67px;
+    padding-top: 90px;
+    transition: 0.3s ease ;
+}
+
+main .attractions > .container > .row  .list-group-item:hover{
+    color: #ff4b64;
+}
+
+
+main .attractions > .container > .row > h2{
+    padding-top: 90px;
+    padding-left: 14px;
+    margin: 0;
+    padding-bottom: 67px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+main .attractions > .container > .row .col-md-4{
+    position: relative;
+	flex: 1;
+}
+
+main .attractions > .container > .row .col-md-4 img{
+    opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+main .attractions > .container > .row .col-md-4:hover img{
+    opacity: 1;
+}
+
+main .attractions > .container > .row .col-md-4 > .item{
+    z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+
+main .attractions > .container > .row .col-md-4 > .item p{
+    text-align: center;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 500;
+    margin-top: 20%;
+    opacity: 0;
+	transition: 0.4s;
+	transition-property:opacity, transform;
+}
+
+
+main .attractions > .container > .row .col-md-4:hover .item p{
+    transform: translateY(30px);
+    opacity: 1;
+}
+
+
+main .attractions > .container > .row .col-md-8 div{
+    position: relative;
+	flex: 1;
+}
+
+main .attractions > .container > .row .col-md-8 div img{
+    opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+main .attractions > .container > .row .col-md-8 div:hover img{
+    opacity: 1;
+}
+
+main .attractions > .container > .row .col-md-8 div .item{
+    z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+
+main .attractions > .container > .row .col-md-8 div .item p{
+    text-align: center;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 500;
+    margin-top: 10%;
+    opacity: 0;
+	transition: 0.4s;
+	transition-property:opacity, transform;
+}
+
+main .attractions > .container > .row .col-md-8 div:hover .item p{
+    transform: translateY(30px);
+    opacity: 1;
+}
+
+/* ==== attractions ends ==== */
+
+
+/* === trips starts ==== */
+
+
+.main-trips__part .list-group a {
+    color: #000;
+    background: none;
+    width: auto;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 67px;
+    padding-top: 90px;
+    transition: 0.3s ease ;
+}
+.main-trips__part .list-group a.active {
+    color: #ff4b64;
+} 
+.main-trips__part .text__trips {
+    padding-top: 90px;
+    padding-left: 14px;
+    margin: 0;
+    padding-bottom: 67px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.cards__content {
+    margin-top: 30px;
+}
+.panel__content .card-body {
+    border: none;
+    border-radius: 0%;
+}
+.panel__content img {
+    border: none;
+    border-radius: 0%;
+    width: 100%;
+    height: 290px;
+} 
+.panel__content .card-body h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #484848;
+    margin: 20px 0 30px 32px;
+}
+.panel__content .card-body .card-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    margin: 0 40px 44px 32px;
+}
+.alltrips {
+    display: flex;
+    justify-content: flex-end;
+    margin: 44px 110px 84px 0px;
+}
+.alltrips__main {
+    font-size: 16px;
+    color: #484848;
+    font-weight: 400;
+}
+            /**      footer   starts  */
+footer {
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(251, 251, 251);
+}
+.second-footer {
+    margin-top: -100px;
+}
+.third__part-footer {
+    margin-top: -50px;
+}
+.fourth__part-footer {
+    margin-top: -190px;
+}
+footer h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #484848;
+}
+footer p a {
+    font-size: 16px;
+    color: #484848;
+    font-weight: 400;
+}
+footer h2 {
+    margin-bottom: 40px;
+}
+footer p {
+    margin-bottom: 28px;
+}
+footer .hyperLink {
+    color: #ff4b64;
+}
+/* ===    MAIN ENDS ====  */
+
+
+
+
+/* ==== MEDIA STARTS ==== */
+
+@media (max-width: 991px){
+    header > h1{
+        font-size: 50px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    header > p{
+        font-size: 28px;
+    }
+
+    header .navbar .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-left: 65px;
+        padding-top: 30px;
+    }
+
+    header .navbar .navbar-toggler{
+        margin-top:20px ;
+    }
+}
+
+@media (max-width: 576px){
+    header h1{
+        font-size: 32px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    header p{
+        font-size: 22px;
+    }
+
+    header .navbar .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-left: 65px;
+        padding-top: 70px;
+    }
+
+    header .navbar .navbar-toggler{
+        margin-top: 70px;
+    }
+
+    header .navbar{
+        background-color: none !important;
+    }
+
+
+    main .flights  .container .table-box .table-row .table-cell p{
+        padding: 10px;
+        margin: 0;
+    }
+  
+    main .flights  .container .table-box .table-row .table-cell img{
+        margin: auto;
+    }
+
+    main .flights  .container .table-box .table-row .table-cell{
+        border-bottom: none;
+    }
+    
+
+}
