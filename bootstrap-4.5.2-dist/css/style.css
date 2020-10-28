@@ -146,6 +146,16 @@ main .main-top button{
 }
 
 
+
+
+/* table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+
+  
+
 main .flights .mob .list-group a {
     color: #000;
     background: none;
@@ -379,7 +389,8 @@ main .attractions > .container > .row > h2{
 
 main .attractions > .container > .row .col-md-4{
     position: relative;
-	flex: 1;
+    flex: 1;
+    overflow: hidden;
 }
 
 main .attractions > .container > .row .col-md-4 img{
