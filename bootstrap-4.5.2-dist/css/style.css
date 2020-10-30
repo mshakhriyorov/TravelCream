@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
-::-webkit-scrollbar{
+ ::-webkit-scrollbar{ 
     background-color: #fff;
     width: 8px ;
+    height: 0;
 }
 ::-webkit-scrollbar-thumb{
-    border-radius: 50%;
-    background-color: #1f2336;
+    border-radius: 10%;
+    background-color: #9a9a9a;
 }
-
+ 
 
 *{
     margin: 0;
@@ -19,12 +20,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+hr{
+    visibility: hidden;
+}
 /* ==== HEADER STARTS ==== */
 
 header{
     background: url('../../images/background_01.jpg') center center no-repeat;
     width: 100%;
-    height: 100vh;
+    height: auto;
     
 }
 
@@ -100,6 +105,7 @@ header p{
     align-items: center;
     color: #fff;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 /* ====  HEADER ENDS ====  */
@@ -326,6 +332,12 @@ main .hotels .container  .col .card button{
     margin-top: 24px;
     margin-bottom: 24px;
     margin-left: 14px;
+    transition: 0.5s ease;
+}
+
+main .hotels .container  .col .card button:hover{
+    color: #fff;
+    background-color: #ff4b64;
 }
 
 
@@ -416,7 +428,18 @@ main .attractions > .container > .row .col-md-4 > .item{
 }
 
 
-main .attractions > .container > .row .col-md-4 > .item p{
+main .attractions > .container > .row .col-md-4 > .item p.text1{
+    text-align: center;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 500;
+    margin-top: 20%;
+    opacity: 0;
+	transition: 0.4s;
+	transition-property:opacity, transform;
+}
+
+main .attractions > .container > .row .col-md-4 > .item p.text2{
     text-align: center;
 	font-size: 16px;
 	text-transform: capitalize;
@@ -430,6 +453,17 @@ main .attractions > .container > .row .col-md-4 > .item p{
 
 main .attractions > .container > .row .col-md-4:hover .item p{
     transform: translateY(30px);
+    opacity: 1;
+}
+
+
+main .attractions > .container > .row .col-md-4:hover .item p.text2{
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+main .attractions > .container > .row .col-md-4:hover .item p.text1{
+    transform: translateY(150px);
     opacity: 1;
 }
 
@@ -548,6 +582,7 @@ footer {
     max-width: 100%;
     height: auto;
     background-color: rgb(251, 251, 251);
+    border-top: 1px solid gray;
 }
 .second-footer {
     margin-top: -100px;
@@ -562,96 +597,20 @@ footer h2 {
     font-size: 30px;
     font-weight: 400;
     color: #484848;
+    margin-bottom: 40px;
+     padding-top: 50px;
 }
+
 footer p a {
     font-size: 16px;
     color: #484848;
     font-weight: 400;
 }
-footer h2 {
-    margin-bottom: 40px;
-}
+
 footer p {
     margin-bottom: 28px;
 }
 footer .hyperLink {
     color: #ff4b64;
 }
-/* ===    MAIN ENDS ====  */
 
-
-
-
-/* ==== MEDIA STARTS ==== */
-
-@media (max-width: 991px){
-    header > h1{
-        font-size: 50px;
-        padding-top: 100px;
-        padding-bottom: 20px;
-    }
-
-    header > p{
-        font-size: 28px;
-    }
-
-    header .navbar .navbar-brand{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        padding-left: 65px;
-        padding-top: 30px;
-    }
-
-    header .navbar .navbar-toggler{
-        margin-top:20px ;
-    }
-}
-
-@media (max-width: 576px){
-    header h1{
-        font-size: 32px;
-        padding-top: 100px;
-        padding-bottom: 10px;
-    }
-
-    header p{
-        font-size: 22px;
-    }
-
-    header .navbar .navbar-brand{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-        padding-left: 65px;
-        padding-top: 70px;
-    }
-
-    header .navbar .navbar-toggler{
-        margin-top: 70px;
-    }
-
-    header .navbar{
-        background-color: none !important;
-    }
-
-
-    main .flights  .container .table-box .table-row .table-cell p{
-        padding: 10px;
-        margin: 0;
-    }
-  
-    main .flights  .container .table-box .table-row .table-cell img{
-        margin: auto;
-    }
-
-    main .flights  .container .table-box .table-row .table-cell{
-        border-bottom: none;
-    }
-    
-
-}

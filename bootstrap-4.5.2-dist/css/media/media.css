@@ -1,0 +1,171 @@
+
+
+
+@media (max-width: 991px){
+    header > h1{
+        font-size: 50px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    header > p{
+        font-size: 28px;
+    }
+
+    header .navbar .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-left: 65px;
+        padding-top: 30px;
+    }
+
+    header .navbar .navbar-toggler{
+        margin-top:20px ;
+    }
+
+    footer h2{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width:767px){
+    header h1{
+        font-size: 32px;
+        padding-top: 59px !important;
+        padding-bottom: 10px !important;
+    }
+
+    header p{
+        font-size: 22px;
+    }
+
+    footer h2{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        margin-top: 50px;
+        margin-bottom: 0 !important;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer .fourth__part-footer h2{
+        padding-top: 150px !important;
+    }
+    
+    footer .second-footer h2{
+        padding-top: 80px !important;
+    }
+
+    hr{
+        visibility: visible !important;
+       margin: auto;
+        background-color: rgb(196, 193, 193) ;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 576px){
+    header h1{
+        font-size: 32px;
+        padding-top: 59px !important;
+        padding-bottom: 10px !important;
+    }
+
+    header p{
+        font-size: 22px;
+    }
+
+    header .navbar .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding-left: 65px;
+    }
+
+
+    header .navbar{
+        background-color: none !important;
+    }
+
+
+    main .flights  .container .table-box .table-row .table-cell p{
+        padding: 10px;
+        margin: 0;
+    }
+  
+    main .flights  .container .table-box .table-row .table-cell img{
+        margin: auto;
+    }
+
+    main .flights  .container .table-box .table-row .table-cell{
+        border-bottom: none;
+    }
+    
+
+    main h2{
+        margin: auto !important;
+        padding-bottom: 5px !important;
+        padding-top: 10px !important;
+        padding-left: 0 !important;
+    }
+
+
+    main .list-group .list-group-item{
+        padding: 12px !important;
+    }
+
+
+    main .flights table.table tr td{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    ::-webkit-scrollbar{
+        height: 10px;
+    }
+
+    main .attractions > .container > .row .col-md-4 > .item p.text2{
+        font-size: 8px;
+    }
+
+    footer .fourth__part-footer  h2{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 0 !important;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer .fourth__part-footer h2{
+        padding-top: 150px !important;
+    }
+
+    
+    footer .second-footer h2{
+        padding-top: 80px;
+    }
+
+    
+    hr{
+        visibility: visible !important;
+        width: 50%;
+        margin: auto;
+        background-color: rgb(196, 193, 193) ;
+    }
+}
