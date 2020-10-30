@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-
+/* 
  ::-webkit-scrollbar{ 
     background-color: #fff;
     width: 8px ;
@@ -10,7 +10,7 @@
     border-radius: 10%;
     background-color: #9a9a9a;
 }
- 
+  */
 
 *{
     margin: 0;
