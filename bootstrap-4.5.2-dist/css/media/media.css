@@ -40,10 +40,6 @@
 }
 
 @media (max-width:767px){
-    html, body{
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
 
     .navbar button{
         border: none !important;
@@ -93,10 +89,7 @@
 }
 
 @media (max-width: 576px){
-    html, body{
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
+ 
 
     header h1{
         font-size: 32px;
@@ -155,9 +148,7 @@
         padding-bottom: 0 !important;
     }
     
-    ::-webkit-scrollbar{
-        height: 10px;
-    }
+    
 
     main .attractions > .container > .row .col-md-4 > .item p.text2{
         font-size: 8px;
