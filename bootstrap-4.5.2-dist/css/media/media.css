@@ -2,6 +2,11 @@
 
 
 @media (max-width: 991px){
+    html, body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
     header > h1{
         font-size: 50px;
         padding-top: 100px;
@@ -35,6 +40,19 @@
 }
 
 @media (max-width:767px){
+    html, body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .navbar button{
+        border: none !important;
+    }
+
+    .navbar button:focus{
+        outline: none !important;
+    }
+
     header h1{
         font-size: 32px;
         padding-top: 59px !important;
@@ -75,6 +93,11 @@
 }
 
 @media (max-width: 576px){
+    html, body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
     header h1{
         font-size: 32px;
         padding-top: 18px !important;

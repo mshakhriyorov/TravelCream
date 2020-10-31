@@ -20,6 +20,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body{
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
 
 hr{
     visibility: hidden;
